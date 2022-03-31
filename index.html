@@ -19,9 +19,9 @@
     <script>
         const btn = document.getElementById('cta');
         btn.addEventListener('click',()=>{
-            TweenMax.to('.panel',1.5,{scaleY:1,height:'100vh',ease: "circ.out"});
+            gsap.to('.panel',1.5,{scaleY:1,height:'100vh',ease: "circ.out"});
             gsap.to('#light',1,{opacity:1,y:0,delay:1,ease: "back.out(1.7)"});
-            TweenMax.to("p",1,{opacity:1,y:20,delay:1.4});
+            gsap.to("p",1,{opacity:1,y:20,delay:1.4});
             gsap.to(".box",3,{opacity:1, scale:1, ease: "elastic.out(1, 0.3)"})
         })
     </script>

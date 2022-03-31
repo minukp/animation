@@ -1,0 +1,44 @@
+$light-color:#f4f4f4;
+ 
+*,*:before,*:after{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+// body:hover .container{
+//     clip-path: polygon(20% 9%, 78% 8%, 83% 82%, 19% 85%);
+// }
+.container,.container2{
+    height:100vh;
+    position: absolute;
+    clip-path: polygon(10% 10%, 90% 10%, 90% 90%, 10% 90%);
+    transition: clip-path 1s;
+    width: 100%;
+    
+    .img{
+        background-image: url('../indoor.jpg');
+        background-size: cover;
+        height: 100vh;
+    }
+    .content{
+        position: absolute;
+        z-index: 1;
+        display: grid;
+        place-items: center;
+        height: 100vh;
+        width: 100%;
+        h1{
+            font-size: 4rem;
+            position: absolute;
+        }
+    }
+}
+.container2{
+    z-index: -1;
+    .img{
+        background-image: url('../flowers.jpg');
+    }
+}
